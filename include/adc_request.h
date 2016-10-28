@@ -2,7 +2,7 @@
 #define ADC_REQUEST_H
 
 
-void * requestData(void * buffer);	// size of buffer must be sizeof(short), returns the buffer
+void requestData(void * buffer);	// size of buffer must be sizeof(short)
 
 void * filter(void * buffer);	
 
