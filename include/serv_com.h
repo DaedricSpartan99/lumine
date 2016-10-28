@@ -12,6 +12,6 @@ void ICACHE_FLASH_ATTR set_TCP_Station(const char * ssid, const char * password,
 void ICACHE_FLASH_ATTR TCP_Accept(int timeout = 15);	// wait until a connection is established, must be non-blocking
 
 void ICACHE_FLASH_ATTR TCP_Connect_Callback(const char * ip_addr, int client_port);	// must be implemented externally
-void ICACHE_FLASH_ATTR onCommand(const char * cmd, const char * sender_ip_addr, int port);	// must be implemented externally
+void ICACHE_FLASH_ATTR onCommand(const char * cmd, const char * sender_ip_addr);	// must be implemented externally
 
 #endif
